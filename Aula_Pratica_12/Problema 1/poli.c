@@ -7,7 +7,17 @@
 
 int lerPoli(int * poli)
 {
-//TODO
+int i=0;
+	int polim[10]={0}
+	while(scanf("%d", polim[i]) && i<10)
+	{
+		i++;
+	}
+	for (i = 0; i < 10; ++i)
+	{
+		poli[i]=polim[i];
+	}
+
 }
 
 void escrevePoli(int * poli, int grau)
