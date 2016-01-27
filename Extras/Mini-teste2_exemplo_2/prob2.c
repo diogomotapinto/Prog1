@@ -50,9 +50,11 @@ int ler_pecas(peca modelo[])
    o respetivo tamanho. O parametro limite indica o limite de custo por peca. */
 peca* lista_compras(peca modelo[], int Nm, float limite, int *Nc)
 {
-	/* problema 2.2 */
+int i=0;
+	while(scanf("%s %d %f", &modelo[i].nome, &modelo[i].quantidade, &modelo[i].preco)==3)
+		i++;
 	
-	return NULL;
+	return i;
 }
 
 /* Guarda no ficheiro com nome especificado por nomeFicheiro a lista de compras. 
